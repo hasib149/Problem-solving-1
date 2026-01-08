@@ -7,7 +7,7 @@ function reverseString(str) {
   }
   return reverse;
 }
-console.log(reverseString("shrabon"));
+// console.log(reverseString("shrabon"));
 
 // Problem 2: Count Vowels in a String
 function vowelsCount(str) {
@@ -20,5 +20,34 @@ function vowelsCount(str) {
   }
   return count;
 }
-console.log(vowelsCount("programming"));
+// console.log(vowelsCount("programming"));
+
+// Problem 3: Check for Palindrome
+function isPlaneDrome(str) {
+  let left = 0;
+  let right = str.length - 1;
+  while (left < right) {
+    if (str[left] !== str[right]) {
+      return false;
+    }
+    left++;
+    right--;
+  }
+  return true;
+}
+// console.log(isPlaneDrome("srabon"));
+// console.log(isPlaneDrome("madam"))
+
+// Problem 4: Find the Maximum Number
+
+function findMaxnumber(arr) {
+  let max = arr[0];
+  for (let i = 1; i < arr.length; i++) {
+    if (arr[i] > max) {
+      max = arr[i];
+    }
+  }
+  return max;
+}
+// console.log(findMaxnumber([1, 2, 3, 4, , 7, 5]));
 
