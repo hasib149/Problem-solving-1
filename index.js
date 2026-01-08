@@ -90,3 +90,33 @@ function findEvenNumbers(arr) {
   return evenNumbers;
 }
 console.log(findEvenNumbers([1, 2, 3, 4, 5, 6, 7, 8]));
+
+// Problem 8: Capitalize First Letter of Each Word
+
+function capitalizeWords(str) {
+  let words = str.split(" ");
+  let capitalizedWords = [];
+
+  for (let i = 0; i < words.length; i++) {
+    let word = words[i];
+    let capitalizedWord = word[0].toUpperCase() + word.slice(1).toLowerCase();
+    capitalizedWords.push(capitalizedWord);
+  }
+  return capitalizedWords.join(" ");
+}
+console.log(capitalizeWords("hello world from javascript"));
+
+// Problem 9: Find the Factorial of a Number
+
+function factorial(n) {
+  if (n < 0) return "Invalid input";
+
+  let result = 1;
+  for (let i = 1; i <= n; i++) {
+    result *= i;
+  }
+  return result;
+}
+
+console.log(factorial(5));
+console.log(factorial(0));
