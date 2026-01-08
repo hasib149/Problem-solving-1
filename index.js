@@ -61,4 +61,18 @@ function duplicate(arr) {
   }
   return uniquearray;
 }
-console.log(duplicate([1, 1, 1, 1, 1, 12, 9, 4, 55, 6]));
+// console.log(duplicate([1, 1, 1, 1, 1, 12, 9, 4, 55, 6]));
+
+// Problem 6: Sum of All Numbers in an Array
+
+function sum(arr) {
+  let sum = 0;
+
+  for (let i = 0; i < arr.length; i++) {
+    sum += arr[i];
+  }
+
+  return sum;
+}
+
+console.log(sum([1, 2, 3, 4, 5]));
